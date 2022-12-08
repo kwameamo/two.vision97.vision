@@ -12,6 +12,10 @@ body {
   font-family: 'Space Mono', monospace;
 }
 
+.mobile {
+  display: none;
+}
+
 header a {
   text-decoration: none;
 }
@@ -67,30 +71,35 @@ ul a:hover {
   margin: auto 0;
   display: none;
   cursor: pointer;
+  width: 80%;
 }
 
 #hamburger-icon div {
   width: 35px;
   height: 3px;
-  background-color: white;
   margin: 6px 0;
   transition: 0.4s;
 }
 
-#ti-eye {
+#hamburger-icon i span {
+  font-family: 'Space Mono', monospace;
+  font-size: 20px;
+}
+
+#ti-layout-navbar-collapse {
   font-size: 30px;
 }
 
-#ti-eye-off {
+#ti-layout-navbar-expand {
   font-size: 30px;
   display: none;
 }
 
-.open #ti-eye {
+.open #ti-layout-navbar-collapse {
   display: none;
 }
 
-.open #ti-eye-off {
+.open #ti-layout-navbar-expand {
   display: block;
 }
 
@@ -99,24 +108,21 @@ ul a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  font-size: 20px;
   font-weight: bold;
-  z-index: 10;
+  background-color: #5a5bd3;
+  color: #222328;
+
 }
 
 .mobile-menu {
   display: none;
-  position: absolute;
-  background-color: #222328;
-  opacity: 98%;
-  top: 50px;
-  left: 0;
-  height: calc(100vh - 50px);
-  width: 100%;
+  position: sticky;
+  background-color: #5a5bd3;
+  /* height: calc(fit-content + 10px); */
 }
 
-.mobile-menu li {
-  margin-bottom: 10px;
-}
+
 
 
 
@@ -495,9 +501,54 @@ footer {
     display: none;
   }
 
-  #hamburger-icon {
-    display: block;
+  .mobile {
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    bottom: calc(env(safe-area-inset-bottom)*1.18);
+    left: 0;
+    right: 0;
+    display: flex;
+    margin: 20px;
+    z-index: 20;
   }
+
+  #hamburger-icon {
+    display: block; 
+    text-align: center;
+    position: sticky;
+    background-color: #5a5bd3;
+    color: #222328;
+    margin: 0 20%;
+  }
+  
+  ul {
+    list-style: none;
+    width: 100%;
+  }
+
+  ul a {
+    color: #222328;
+    text-decoration: none;
+  }
+
+  ul a:hover {
+    text-decoration: none;
+  }
+  
+  ul li {
+    /* color: #5a5bd3; */
+    padding: 5px 0;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  ul li:hover {
+    background-color: #30304d;
+
+  }
+  
 
 
 /* SHOP *//* SHOP *//* SHOP *//* SHOP *//* SHOP */
@@ -602,5 +653,12 @@ footer {
 }
 
 /* CONTACT */ /* CONTACT */ /* CONTACT */
+
+
+
+footer {
+  padding: 5px 0 100px 0;
+
+}
 
 }
