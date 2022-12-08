@@ -120,45 +120,37 @@ ul a:hover {
 
 
 
-
-/* SHOP *//* SHOP *//* SHOP *//* SHOP *//* SHOP */
-
-.shop {
-  display: flex;
-  flex-direction: column;
-  height: fit-content;
-  margin: 15px 0;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
   justify-content: center;
+  margin: 0 10%;
   align-items: center;
   text-align: left;
   color: #888a97;  
-
-} 
-
-.shop h2 {
-  text-decoration: underline;
 }
 
-.shopCards {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+.card {
+  height: fit-content;
+  border: solid 1px #5a5bd3;
+  border-radius: 5px;
   text-align: center;
-  border-top: solid 1px #5a5bd3;
-  border-bottom: solid 1px #5a5bd3;
-
+  transition: 0.3s ease-in-out;
 }
+
+.card:hover {
+  border: solid 1px #888a97;
+}
+
+/* SHOP *//* SHOP *//* SHOP *//* SHOP *//* SHOP */
 
 .shopItem {
-  padding: 20px;
   cursor: pointer;
   justify-content: center;
+  margin: 10px 0;
 
 }
-
-.shopItem:nth-child(1), .shopItem:nth-child(2) {
-    border-right: solid 1px #5a5bd3;
-  }
 
 .shopItem img {
   width: 300px;
@@ -205,10 +197,11 @@ h5 span {
 
 /* LOOKS */
 .looks {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 20px;
   height: fit-content;
-  margin: 15px;
+  margin: 0 10%;
   justify-content: center;
   align-self: center;
   text-align: left;
@@ -216,11 +209,11 @@ h5 span {
 } 
 
 .slide-half {
-  width: 70%;
+  /* border: #5a5bd3 solid 1px; */
 }
 
 .looksInfo-half {
-  width: 30%;
+  /* border: #5a5bd3 solid 1px; */
 }
 
 .looksInfo-half h5 a {
@@ -249,7 +242,7 @@ h5 span {
 
 /* Slideshow container */
 .slideshow-container {
-  width: 50%;
+  width: 100%;
   position: relative;
   margin: auto;
 
@@ -344,41 +337,48 @@ to {
 
 /* TERMS */ /* TERMS */ /* TERMS */
 .terms {
-  display: flex;
-  flex-direction: column;
-  margin: 15px 300px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
+  /* gap: 20px; */
+  height: fit-content;
+  margin: 0 10%;
   justify-content: center;
-  align-items: left;
+  align-self: center;
   text-align: left;
   color: #888a97;
 } 
+
+.terms p {
+  text-align: justify;
+}
+
+.terms h3 {
+  color: #5a5bd3;
+}
 /* TERMS */ /* TERMS */ /* TERMS */
 
 /* CONTACT */ /* CONTACT */ /* CONTACT */ /* CONTACT */
 
 .contact {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 20px;
   height: fit-content;
-  margin: 15px 300px;
-  justify-content: left;
-  align-items: left;
+  margin: 0 10%;
+  justify-content: center;
+  align-self: center;
   text-align: left;
   color: #888a97;
-} 
+}
 
 .contact-form {
   font-family: 'Space Mono', monospace;
-  width: 100%;
   height: fit-content;
-  border: solid 1px #888a97;
-  border-radius: 5px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 10px;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+  /* text-align: center; */
   column-gap: 20px;
 }
 
@@ -386,11 +386,10 @@ to {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
 }
 
 .contact-form form  input[type="text"], input[type="email"] {
-  width: 50%;
+  width: 100%;
   font-family: 'Space Mono', monospace;
   background-color: #888a97;
   outline: none;
@@ -402,7 +401,7 @@ to {
 }
      
 .contact-form form   input[type="submit"] {
-  width: 50%;
+  width: 100%;
   font-family: 'Space Mono', monospace;
   background-color: #5a5bd3;
   outline: none;
@@ -423,7 +422,7 @@ to {
 }
 
 .contact-form form    textarea {
-  width: 50%;
+  width: 100%;
   font-family: 'Space Mono', monospace;
   background-color: #888a97;
   outline: none;
@@ -496,9 +495,9 @@ footer {
 
 
 @media only screen and (max-width: 600px) {
-  header {
+  /* header {
     padding: 0 5px;
-  }
+  } */
 
   header nav {
     display: none;
@@ -510,16 +509,6 @@ footer {
 
 
 /* SHOP *//* SHOP *//* SHOP *//* SHOP *//* SHOP */
-  .shop {
-    margin: 15px 10px 15px 10px;
-  
-  } 
-  
-  .shopCards {
-    display: flex;
-    flex-direction: column;
-  
-  }
   
   .itemPage {
     display: block;
@@ -528,15 +517,6 @@ footer {
     column-gap: 0px;
   
   }
-  
-  .shopItem:nth-child(1), .shopItem:nth-child(2) {
-    border-bottom: solid 1px #5a5bd3;
-  }
-  
-  .shopItem:nth-child(1), .shopItem:nth-child(2) {
-    border-right: none;
-  }
-  
   
   .itemMeta {
     padding: 10px;
@@ -580,67 +560,54 @@ footer {
 /* SHOP *//* SHOP *//* SHOP *//* SHOP *//* SHOP */
 
 /* LOOKS *//* LOOKS *//* LOOKS *//* LOOKS *//* LOOKS *//* LOOKS */
-  .looks {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: fit-content;
-    margin: 15px;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    color: #888a97;
-  } 
+.looks {
+  margin: 0 10%;
+} 
 
-  .slide-half {
-    width: 100%;
-  }
-  
-  .looksInfo-half {
-    width: 100%;
-    margin-top: 20px;
-    align-items: center;
-    justify-content: center;
-  }
+.slide-half {
+  margin: 0 10%;
 
-  .slideshow-container {
-    width: 80%;
-  }
+}
+
+.looksInfo-half {
+  margin: 0 10%;
+
+}
+
+.looksInfo-half h5 a {
+  color:#5a5bd3;
+  text-decoration: none; 
+  transition: 0.6s ease;
+}
+
+.looksInfo-half h5 a:hover {
+  color: #888a97;
+  text-decoration: underline; 
+}
+
 /* LOOKS *//* LOOKS *//* LOOKS *//* LOOKS *//* LOOKS *//* LOOKS */
 
 /* TERMS */ /* TERMS */ /* TERMS */
 .terms {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  height: fit-content;
-  margin: 20px;
-  justify-content: left;
-  align-items: left;
-  text-align: left;
-  color: #888a97;
-} 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
 /* TERMS */ /* TERMS */ /* TERMS */
 
 
 /* CONTACT */ /* CONTACT */ /* CONTACT */
 
 .contact {
-  margin: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 
 }
 
-.contact-form form  input[type="text"], input[type="email"] {
-  width: 100%;
-}
+.contact-other {
 
-.contact-form form   input[type="submit"] {
-  width: 100%;
-}
-
-.contact-form form    textarea {
-  width: 100%;
-}
 
 }
 /* CONTACT */ /* CONTACT */ /* CONTACT */
+
+}
