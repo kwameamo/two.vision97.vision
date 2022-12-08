@@ -88,19 +88,23 @@ ul a:hover {
 
 #ti-layout-navbar-collapse {
   font-size: 30px;
+  margin: 10px 0;
 }
 
 #ti-layout-navbar-expand {
   font-size: 30px;
   display: none;
+  margin: 10px 0;
 }
 
 .open #ti-layout-navbar-collapse {
   display: none;
+  margin: 10px 0;
 }
 
 .open #ti-layout-navbar-expand {
   display: block;
+  margin: 10px 0;
 }
 
 .open .mobile-menu {
