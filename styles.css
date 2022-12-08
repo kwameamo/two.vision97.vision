@@ -71,7 +71,7 @@ ul a:hover {
   margin: auto 0;
   display: none;
   cursor: pointer;
-  width: 80%;
+  width: 100%;
 }
 
 #hamburger-icon div {
@@ -87,12 +87,12 @@ ul a:hover {
 }
 
 #ti-layout-navbar-collapse {
-  font-size: 30px;
+  font-size: 40px;
   margin: 10px 0;
 }
 
 #ti-layout-navbar-expand {
-  font-size: 30px;
+  font-size: 40px;
   display: none;
   margin: 10px 0;
 }
@@ -509,12 +509,13 @@ footer {
     align-items: center;
     justify-content: center;
     position: fixed;
+    width: 100%;
     bottom: 0;
     bottom: calc(env(safe-area-inset-bottom)*1.18);
     left: 0;
     right: 0;
     display: flex;
-    margin: 20px;
+    /* margin: 20px; */
     z-index: 20;
   }
 
@@ -524,7 +525,7 @@ footer {
     position: sticky;
     background-color: #5a5bd3;
     color: #222328;
-    margin: 0 20%;
+    margin: 0 10%;
   }
   
   ul {
