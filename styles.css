@@ -208,14 +208,6 @@ h5 span {
   color: #888a97;
 } 
 
-.slide-half {
-  /* border: #5a5bd3 solid 1px; */
-}
-
-.looksInfo-half {
-  /* border: #5a5bd3 solid 1px; */
-}
-
 .looksInfo-half h5 a {
   color:#5a5bd3;
   text-decoration: none; 
@@ -604,10 +596,6 @@ footer {
 
 }
 
-.contact-other {
-
-
-}
 /* CONTACT */ /* CONTACT */ /* CONTACT */
 
 }
