@@ -71,7 +71,8 @@ ul a:hover {
   margin: auto 0;
   display: none;
   cursor: pointer;
-  width: 100%;
+  width: 60%;
+  padding: 10px;
 }
 
 #hamburger-icon div {
@@ -83,26 +84,26 @@ ul a:hover {
 
 #hamburger-icon i span {
   font-family: 'Space Mono', monospace;
+  /* font-size: 20px; */
+}
+
+#ti-menu {
   font-size: 20px;
-}
-
-#ti-layout-navbar-collapse {
-  font-size: 40px;
   margin: 10px 0;
 }
 
-#ti-layout-navbar-expand {
-  font-size: 40px;
+#ti-x {
+  font-size: 20px;
   display: none;
   margin: 10px 0;
 }
 
-.open #ti-layout-navbar-collapse {
+.open #ti-menu {
   display: none;
   margin: 10px 0;
 }
 
-.open #ti-layout-navbar-expand {
+.open #ti-x {
   display: block;
   margin: 10px 0;
 }
