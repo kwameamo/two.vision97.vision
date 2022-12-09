@@ -21,7 +21,7 @@ header a {
 }
 
 header {
-  padding: 0 10%;
+  padding: 0 5%;
   background-color: #222328;
   color: #888a97;
   height: 50px;
@@ -136,7 +136,7 @@ ul a:hover {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
   justify-content: center;
-  margin: 0 10%;
+  margin: 0 5%;
   align-items: center;
   text-align: left;
   color: #888a97;  
@@ -212,7 +212,7 @@ h5 span {
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   gap: 20px;
   height: fit-content;
-  margin: 0 10%;
+  margin: 0 5%;
   justify-content: center;
   align-self: center;
   text-align: left;
@@ -344,7 +344,7 @@ to {
   grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
   /* gap: 20px; */
   height: fit-content;
-  margin: 0 10%;
+  margin: 0 5%;
   justify-content: center;
   align-self: center;
   text-align: left;
@@ -367,7 +367,7 @@ to {
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   gap: 20px;
   height: fit-content;
-  margin: 0 10%;
+  margin: 0 5%;
   justify-content: center;
   align-self: center;
   text-align: left;
@@ -526,7 +526,7 @@ footer {
     position: sticky;
     background-color: #5a5bd3;
     color: #222328;
-    margin: 0 10%;
+    margin: 0 5%;
     margin-bottom: 30px;
     border-radius: 5px;
   }
@@ -561,6 +561,15 @@ footer {
 
 /* SHOP *//* SHOP *//* SHOP *//* SHOP *//* SHOP */
   
+  .shopItem h5 {
+    font-size: 15px
+  }
+
+  .shopItem h5 a span {
+    font-size: 15px
+  }
+
+
   .itemPage {
     display: block;
     height: fit-content;
@@ -614,16 +623,18 @@ footer {
 .looks {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  margin: 0 10%;
+  margin: 0 5%;
+  font-size: 11px;
+
 } 
 
 /* .slide-half {
-  margin: 0 10%;
+  margin: 0 5%;
 
 }
 
 .looksInfo-half {
-  margin: 0 10%;
+  margin: 0 5%;
 
 } */
 
@@ -644,8 +655,16 @@ footer {
 .terms {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  margin: 0 10%;
+  margin: 0 5%;
 
+}
+
+.terms p {
+  font-size: 11px;
+}
+
+.terms h2, h3 {
+  font-size: 15px;
 }
 
 /* TERMS */ /* TERMS */ /* TERMS */
@@ -656,8 +675,16 @@ footer {
 .contact {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  margin: 0 10%;
+  margin: 0 5%;
 
+}
+
+.contact h2, h3 {
+  font-size: 15px;
+}
+
+.contact p, a {
+  font-size: 11px;
 }
 
 /* CONTACT */ /* CONTACT */ /* CONTACT */
@@ -666,6 +693,12 @@ footer {
 
 footer {
   padding: 5px 0 100px 0;
+  font-size: 11px;
+
+}
+
+footer h3 {
+  font-size: 11px;
 
 }
 
