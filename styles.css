@@ -642,26 +642,25 @@ footer {
   }
 
 
-  .itemPage {
+  /* .itemPage {
     display: block;
     height: fit-content;
-    /* margin: 100px 30px 100px 30px; */
     column-gap: 0px;
   
-  }
+  } */
   
   .itemMeta {
     /* padding: 10px; */
   }
   
-  .itemPageL {
+  /* .itemPageL {
     display: flex;
     flex-direction: column;
     width: 100%;
     text-align: center;
     align-items: center;
     justify-content: center;
-  }
+  } */
   
   .itemPageL img {
     width: 100%;
