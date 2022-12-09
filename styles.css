@@ -192,6 +192,65 @@ h5 span {
   transition: 0.6s ease;
 }
 
+.itemPageR {
+  width: 100%;
+}
+
+.itemPage h3{
+  color: #5a5bd3;
+  font-size: 25px;
+}
+
+.itemPage h2{
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.itemMeta a h2{
+  color: #5a5bd3;
+  font-size: 15px;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.itemMeta a{
+  text-decoration: none;
+}
+
+.itemPageR select {
+  margin-top: 10px;
+  width: 30%;
+  height: 30px;
+  background-color: transparent;
+  font-family: 'Space Mono', monospace;
+  outline: none;
+  border: 1px solid #5a5bd3;
+  color: #888a97;
+}
+
+.itemMeta button[type="submit"] {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 30%;  
+  height: 30px;
+  font-family: 'Space Mono', monospace;
+  background-color: #5a5bd3;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  -webkit-box-shadow: 6px 6px 0px -3px rgba(0,0,0,0.53);
+  -moz-box-shadow: 6px 6px 0px -3px rgba(0,0,0,0.53);
+  box-shadow: 6px 6px 0px -3px rgba(0,0,0,0.53);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.itemMeta button[type="submit"]:hover {
+  background-color: #888a97;
+}
+    
+
+
 /* SHOP *//* SHOP *//* SHOP *//* SHOP *//* SHOP */
 
 /* ABOUT */
@@ -375,7 +434,7 @@ to {
 
 /* CONTACT */ /* CONTACT */ /* CONTACT */ /* CONTACT */
 
-.contact {
+.contact, .itemPage {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   gap: 20px;
