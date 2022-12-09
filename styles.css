@@ -662,9 +662,14 @@ footer {
     justify-content: center;
   } */
   
+
+  .itemPageL {
+    width: 100%;
+  }
+
+
   .itemPageL img {
     width: 100%;
-    height: 100%;
   }
   
   .itemPageR {
