@@ -116,6 +116,7 @@ ul a:hover {
   font-weight: bold;
   background-color: #5a5bd3;
   color: #222328;
+  border-radius: 5px;
 
 }
 
@@ -526,6 +527,8 @@ footer {
     background-color: #5a5bd3;
     color: #222328;
     margin: 0 10%;
+    margin-bottom: 30px;
+    border-radius: 5px;
   }
   
   ul {
