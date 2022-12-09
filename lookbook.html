@@ -8,18 +8,28 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Space+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <link rel="shortcut icon" href="images/Vision97LogoSQ1.jpg">
     <link rel="apple-touch-icon" href="images/Vision97LogoSQ1.jpg" sizes="72x72">
     <link rel="apple-touch-icon" href="images/Vision97LogoSQ1.jpg" sizes="114x114">
     <title>Vision'97 + Looks</title>
   </head>
+
+
+  <style>
+    .swiper-button-next, .swiper-button-prev {
+        color: #5a5bd3;
+      }
+  </style>
+  
   <body>
     <header>
       <div id="brand">  <a href="index.html"> <img src="images/Vision97LogoW.svg" alt="Logo"> </a></div>
       <nav>
         <ul>
           <li><a href="shop.html">Shop</a></li>
-          <li><a href="looks.html">Looks</a></li>
+          <li><a href="lookbook.html">Looks</a></li>
           <li><a href="terms.html">Terms</a></li>
           <li><a href="contact.html">Contact</a></li>
 
@@ -42,63 +52,25 @@
 
 <!-- Content --><!-- Content --><!-- Content -->
     <div class="looks">
-        
-        <div class="slide-half">
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 10</div>
-                    <img src="looks/IMG_1.JPG" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">2 / 10</div>
-                    <img src="looks/IMG_2.JPG" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">2 / 10</div>
-                    <img src="looks/IMG_3.JPG" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">4 / 10</div>
-                    <img src="looks/IMG_4.JPG" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">5 / 10</div>
-                    <img src="looks/IMG_5.JPG" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">6 / 10</div>
-                    <img src="looks/IMG_6.JPG" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">7 / 10</div>
-                    <img src="looks/IMG_7.JPG" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">8 / 10</div>
-                    <img src="looks/IMG_8.jpg" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">9 / 10</div>
-                    <img src="looks/IMG_9.jpg" style="width:100%">
-                </div>
 
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
-                <br>
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
-                    <span class="dot" onclick="currentSlide(5)"></span>
-                    <span class="dot" onclick="currentSlide(6)"></span>
-                    <span class="dot" onclick="currentSlide(7)"></span>
-                    <span class="dot" onclick="currentSlide(8)"></span>
-                    <span class="dot" onclick="currentSlide(9)"></span>
-                </div>
-            </div>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+            <div class="swiper-slide"><img src="looks/IMG_1.JPG" alt=""></div>
+            <div class="swiper-slide"><img src="looks/IMG_9.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="looks/IMG_2.JPG" alt=""></div>
         </div>
-   
+
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+    </div>
+            
+
         <!-- Title -->
         <div class="looksInfo-half">
             <h3>2023 1<sup>st</sup> QTR DELIVERY</h3>
@@ -127,11 +99,28 @@
     </div>
   </div>
 
-    <script>
-     showSlides(slideIndex);
-    </script>
+
 <!-- FOOTER --><!-- FOOTER --><!-- FOOTER -->
 <script src="index.js"></script>
+
+
+  <!-- Initialize Swiper -->
+  <script type="module">
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+    
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    
+    });
+  </script>
+
+
     <footer>
         <div class="socials">
             <a href="https://www.instagram.com/vision97.vision" target="_blank"><i class="ti ti-brand-instagram"></i></a>

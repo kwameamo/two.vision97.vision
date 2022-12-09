@@ -230,6 +230,18 @@ h5 span {
   color: #888a97;
   text-decoration: underline; 
 }
+
+.swiper {
+  width: 100%;
+  cursor: grab;
+  margin: 0;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+
 /* LOOKS */
 
 /* Slideshow */ /* Slideshow */ /* Slideshow */ /* Slideshow */
@@ -628,6 +640,17 @@ footer {
   font-size: 11px;
 
 } 
+
+.swiper {
+  width: 100%;
+  cursor: grab;
+  margin: 0;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
 
 /* .slide-half {
   margin: 0 5%;
