@@ -10,6 +10,7 @@ body {
   background-color: #222328;
   color: #888a97;
   font-family: 'Space Mono', monospace;
+  scrollbar-color: #5a5bd3;
 }
 
 .mobile {
@@ -317,6 +318,7 @@ h5 span {
   width: 100%;
 }
 
+
 /* ITEM PAGE */ /* ITEM PAGE */ /* ITEM PAGE */ /* ITEM PAGE */
 
 
@@ -441,6 +443,7 @@ h5 span {
   width: 100%;
   font-family: 'Space Mono', monospace;
   background-color: #5a5bd3;
+  color: #222328;
   outline: none;
   border: none;
   padding: 10px;
