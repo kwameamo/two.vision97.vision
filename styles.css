@@ -231,6 +231,12 @@ h5 span {
 }
 
 .itemDescription select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.select-css {
   width: 50%;
   font-family: 'Space Mono', monospace;
   background-color: #888a97;
@@ -239,6 +245,23 @@ h5 span {
   border-radius: 5px;
   padding: 10px;
   box-sizing: border-box;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+}
+
+.select-css::-ms-expand {
+  display: none;
+}
+
+.select-css:focus {
+  border-color: solid 1px #5a5bd3;
+  outline: none;
+}
+
+.select-css option {
+  font-weight: normal;
 }
 
 .itemDescription input[type="text"] {
