@@ -272,7 +272,7 @@ h5 span {
   transition: 0.3s;
 }
     
-.itemDescription input[type="submit"]:hover {
+.itemDescription button[type="submit"]:hover {
   background-color: #888a97;
 }
 
