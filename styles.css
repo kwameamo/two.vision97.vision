@@ -237,34 +237,6 @@ h5 span {
   appearance: none;
 }
 
-.select-css {
-  width: 50%;
-  font-family: 'Space Mono', monospace;
-  background-color: #888a97;
-  color: #222328;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  box-sizing: border-box;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-
-}
-
-.select-css::-ms-expand {
-  display: none;
-}
-
-.select-css:focus {
-  border-color: solid 1px #5a5bd3;
-  outline: none;
-}
-
-.select-css option {
-  font-weight: normal;
-}
 
 .itemDescription input[type="text"] {
   width: 50%;
@@ -308,14 +280,16 @@ h5 span {
   background-color: #888a97;
 }
 
-.swiper {
+.itemPage .swiper {
   width: 100%;
   cursor: grab;
   margin: 0;
+  background-color: #888a97;
 }
 
-.swiper-slide img {
+.itemPage .swiper-slide img {
   width: 100%;
+  padding: 10px;
 }
 
 .size-selection label {
