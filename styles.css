@@ -318,6 +318,28 @@ h5 span {
   width: 100%;
 }
 
+.size-selection label {
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  width: fit-content;
+  padding: 10px;
+  background-color: #888a97;
+  border-radius: 5px;
+  color: #222328;
+  transition: all 0.3s;
+}
+
+.size-selection input[type="radio"] {
+  display: none;
+  text-align: center;
+  align-items: center;
+}
+
+.size-selection input[type="radio"]:checked + label {
+  background-color: #5a5bd3;
+}
+
 
 /* ITEM PAGE */ /* ITEM PAGE */ /* ITEM PAGE */ /* ITEM PAGE */
 

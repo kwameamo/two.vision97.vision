@@ -17,14 +17,14 @@
 
   <style>
     .swiper-button-next, .swiper-button-prev {
-        color: #5a5bd3;
+        color: #888a97;
       }
+    
+    .swiper-button-next:after, .swiper-button-prev:after {
+        font-size: 20px;
+    }
 
-      @media only screen and (max-width: 600px) {
-        .swiper-button-next, .swiper-button-prev {
-            display: none;
-          }
-      }
+
   </style>
 
 
@@ -68,22 +68,41 @@
             <h3>Motherland T</h3>
             <h3>$35</h3>
             <br>
-            <select class="select-css" name="size" id="size">
+            <p>
+                100% cotton 7.5oz short sleeved tee <br>
+                HQ screen printed graphic on front, <br> back & left sleeve
+            <p>
+            <br>
+            <p>SIZES:</p>
+
+            <form class="size-selection">
+                <input type="radio" id="size-s" name="sizes" value="S">
+                <label for="size-s">S</label>
+
+                <input type="radio" id="size-m" name="sizes" value="M">
+                <label for="size-m">M</label>
+
+                <input type="radio" id="size-l" name="sizes" value="L">
+                <label for="size-l">L</label>
+
+                <input type="radio" id="size-xl" name="sizes" value="XL">
+                <label for="size-xl">XL</label>
+
+                <input type="radio" id="size-2xl" name="sizes" value="2XL">
+                <label for="size-2xl">2XL</label>
+            </form>
+            <!-- <label for="size">Sizes:</label> -->
+            <br>
+            <!-- <select class="select-css" name="size" id="size">
                 <option value="s">Small</option>
                 <option value="m">Medium</option>
                 <option value="l">Large</option>
                 <option value="xl">X Large</option>
                 <option value="2xl">2X Large</option>
-            </select> 
-            <br> <br>
-            <input type="text" inputmmode="decimal" name="quantity" placeholder="Quantity" id="quantity" max="5" min="1" required>
-            <br> <br>
+            </select>  -->
+            <br>
             <button type="submit">Add to Cart</button>
             <br> <br>
-            <p>
-                100% cotton 7.5oz short sleeved tee <br>
-                HQ screen printed graphic on front, <br> back & left sleeve
-            <p>
             <br>
             <h5><a href="shop.html">← Back To Shop</a></h5>
         </div>
