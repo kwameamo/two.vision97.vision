@@ -240,6 +240,7 @@ h5 span {
   width: 50%;
   font-family: 'Space Mono', monospace;
   background-color: #888a97;
+  color: #222328;
   outline: none;
   border: none;
   border-radius: 5px;
@@ -268,11 +269,17 @@ h5 span {
   width: 50%;
   font-family: 'Space Mono', monospace;
   background-color: #888a97;
+  color: #222328;
   outline: none;
   border: none;
   border-radius: 5px;
   padding: 10px;
   box-sizing: border-box;
+}
+
+.itemDescription input[type="text"]::placeholder {
+  font-family: 'Space Mono', monospace;
+  color: #222328;
 }
 
 .itemDescription p {
@@ -284,6 +291,7 @@ h5 span {
   padding: 10px;
   font-family: 'Space Mono', monospace;
   background-color: #5a5bd3;
+  color: #222328;
   outline: none;
   border: none;
   box-sizing: border-box;
@@ -447,6 +455,27 @@ h5 span {
 }
     
 .contact-form form input[type="submit"]:hover {
+  background-color: #888a97;
+}
+
+.contact-form form   button[type="submit"] {
+  width: 100%;
+  font-family: 'Space Mono', monospace;
+  background-color: #5a5bd3;
+  outline: none;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+  -webkit-box-shadow: 6px 6px 0px -3px rgba(0,0,0,0.53);
+  -moz-box-shadow: 6px 6px 0px -3px rgba(0,0,0,0.53);
+  box-shadow: 6px 6px 0px -3px rgba(0,0,0,0.53);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+    
+.contact-form form button[type="submit"]:hover {
   background-color: #888a97;
 }
 
@@ -660,6 +689,17 @@ footer {
   text-decoration: underline; 
 }
 
+.itemDescription input[type="text"] {
+  width: 100%;
+}
+
+.itemDescription button[type="submit"] {
+  width: 100%;
+}
+
+.select-css {
+  width: 100%;
+}
 /* ITEM PAGE *//* ITEM PAGE *//* ITEM PAGE *//* ITEM PAGE *//* ITEM PAGE *//* ITEM PAGE */
 
 
