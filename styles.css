@@ -173,6 +173,7 @@ ul a:hover {
   color: #888a97;
   text-decoration: none; 
   transition: 0.6s ease;
+  font-size: 15px;
 }
 
 .shopItem h5 a:hover {
@@ -191,48 +192,73 @@ h5 span {
   text-decoration: none; 
   transition: 0.6s ease;
 }
+/* SHOP *//* SHOP *//* SHOP *//* SHOP *//* SHOP */
 
-.itemPageR {
-  width: 100%;
+
+/* ITEM PAGE */ /* ITEM PAGE */ /* ITEM PAGE */ /* ITEM PAGE */
+
+.itemPage {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 20px;
+  height: fit-content;
+  margin: 0 5%;
+  justify-content: center;
+  align-self: center;
+  text-align: left;
+  color: #888a97;
+} 
+
+.itemDescription h3 {
+  font-size: 20px;
+  color:#5a5bd3;
 }
 
-.itemPage h3{
-  color: #5a5bd3;
-  font-size: 25px;
-}
-
-.itemPage h2{
-  font-size: 30px;
-  text-decoration: none;
-}
-
-.itemMeta a h2{
-  color: #5a5bd3;
-  font-size: 15px;
-  text-decoration: none;
-  margin-top: 15px;
-}
-
-.itemMeta a{
-  text-decoration: none;
-}
-
-.itemPageR select {
-  margin-top: 10px;
-  width: 30%;
-  height: 30px;
-  background-color: transparent;
-  font-family: 'Space Mono', monospace;
-  outline: none;
-  border: 1px solid #5a5bd3;
+.itemDescription h3:first-child {
   color: #888a97;
 }
 
-.itemMeta button[type="submit"] {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 30%;  
-  height: 30px;
+.itemDescription h5 a {
+  color:#5a5bd3;
+  text-decoration: none; 
+  transition: 0.6s ease;
+  font-size: 16px;
+}
+
+.itemDescription h5 a:hover {
+  color: #888a97;
+  text-decoration: underline; 
+}
+
+.itemDescription select {
+  width: 50%;
+  font-family: 'Space Mono', monospace;
+  background-color: #888a97;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.itemDescription input[type="number"] {
+  width: 50%;
+  font-family: 'Space Mono', monospace;
+  background-color: #888a97;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.itemDescription p {
+  font-size: 15px;
+}
+
+.itemDescription  button[type="submit"] {
+  width: 50%;
+  padding: 10px;
   font-family: 'Space Mono', monospace;
   background-color: #5a5bd3;
   outline: none;
@@ -241,17 +267,27 @@ h5 span {
   -webkit-box-shadow: 6px 6px 0px -3px rgba(0,0,0,0.53);
   -moz-box-shadow: 6px 6px 0px -3px rgba(0,0,0,0.53);
   box-shadow: 6px 6px 0px -3px rgba(0,0,0,0.53);
+  border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
-
-.itemMeta button[type="submit"]:hover {
+    
+.itemDescription input[type="submit"]:hover {
   background-color: #888a97;
 }
-    
 
+.swiper {
+  width: 100%;
+  cursor: grab;
+  margin: 0;
+}
 
-/* SHOP *//* SHOP *//* SHOP *//* SHOP *//* SHOP */
+.swiper-slide img {
+  width: 100%;
+}
+
+/* ITEM PAGE */ /* ITEM PAGE */ /* ITEM PAGE */ /* ITEM PAGE */
+
 
 /* ABOUT */
 .about {
@@ -303,111 +339,6 @@ h5 span {
 
 /* LOOKS */
 
-/* Slideshow */ /* Slideshow */ /* Slideshow */ /* Slideshow */
-
-.mySlides {
-  display: none
-}
-
-.mySlides img {
-  vertical-align: middle;
-  touch-action: pan-right pinch-zoom;
-
-}
-
-/* Slideshow container */
-.slideshow-container {
-  width: 100%;
-  position: relative;
-  margin: auto;
-
-
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 5px;
-  /* margin-top: -22px; */
-  color: #222328;
-  font-weight: bold;
-  font-size: 25px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  opacity: 50%;
-
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit seethrough */
-.prev:hover, .next:hover {
-  background-color: #5a5bd3;
-  opacity: 1000%;
-
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #222328;
-  background: #5a5bd3;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #888a97;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #5a5bd3;
-}
-
-/* Fading animation */
-.fade {
--webkit-animation-name: fade;
--webkit-animation-duration: 1.5s;
-animation-name: fade;
-animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-from {
-  opacity: .4
-}
-to {
-  opacity: 1
-}
-}
-
-@keyframes fade {
-  from {
-    opacity: .4
-  }
-  to {
-    opacity: 1
-  }
-}
-
-/* Slideshow */ /* Slideshow */ /* Slideshow */ /* Slideshow */
 
 
 /* TERMS */ /* TERMS */ /* TERMS */
@@ -434,7 +365,7 @@ to {
 
 /* CONTACT */ /* CONTACT */ /* CONTACT */ /* CONTACT */
 
-.contact, .itemPage {
+.contact {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   gap: 20px;
@@ -641,66 +572,6 @@ footer {
     font-size: 15px
   }
 
-
-  /* .itemPage {
-    display: block;
-    height: fit-content;
-    column-gap: 0px;
-  
-  } */
-  
-  .itemMeta {
-    /* padding: 10px; */
-  }
-  
-  /* .itemPageL {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  } */
-  
-
-  .itemPage {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    margin: 0 5%;
-    font-size: 11px;
-  
-  } 
-
-  .itemPageL {
-    width: 100%;
-  }
-
-
-  .itemPageL img {
-    width: 100%;
-  }
-  
-  .itemPageR {
-    width: 100%;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  
-  }
-  
-  .itemPageR select {
-    margin-top: 10px;
-    width: 100%;
-  }
-  
-  .itemPageR button[type=submit] {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 100%;
-  
-  }
 /* SHOP *//* SHOP *//* SHOP *//* SHOP *//* SHOP */
 
 /* LOOKS *//* LOOKS *//* LOOKS *//* LOOKS *//* LOOKS *//* LOOKS */
@@ -722,17 +593,6 @@ footer {
   width: 100%;
 }
 
-
-/* .slide-half {
-  margin: 0 5%;
-
-}
-
-.looksInfo-half {
-  margin: 0 5%;
-
-} */
-
 .looksInfo-half h5 a {
   color:#5a5bd3;
   text-decoration: none; 
@@ -745,6 +605,40 @@ footer {
 }
 
 /* LOOKS *//* LOOKS *//* LOOKS *//* LOOKS *//* LOOKS *//* LOOKS */
+
+/* ITEM PAGE *//* ITEM PAGE *//* ITEM PAGE *//* ITEM PAGE *//* ITEM PAGE *//* ITEM PAGE */
+
+.itemPage {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin: 0 5%;
+  font-size: 11px;
+
+} 
+
+.swiper {
+  width: 100%;
+  cursor: grab;
+  margin: 0;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.itemDescription h5 a {
+  color:#5a5bd3;
+  text-decoration: none; 
+  transition: 0.6s ease;
+}
+
+.itemDescription h5 a:hover {
+  color: #888a97;
+  text-decoration: underline; 
+}
+
+/* ITEM PAGE *//* ITEM PAGE *//* ITEM PAGE *//* ITEM PAGE *//* ITEM PAGE *//* ITEM PAGE */
+
 
 /* TERMS */ /* TERMS */ /* TERMS */
 .terms {
