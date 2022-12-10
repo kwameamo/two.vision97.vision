@@ -241,7 +241,7 @@ h5 span {
   box-sizing: border-box;
 }
 
-.itemDescription input[type="number"] {
+.itemDescription input[type="text"] {
   width: 50%;
   font-family: 'Space Mono', monospace;
   background-color: #888a97;
