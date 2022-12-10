@@ -91,6 +91,7 @@ ul a:hover {
 #ti-menu {
   font-size: 20px;
   margin: 10px 0;
+  transition: 0.3s ease-in-out;
 }
 
 #ti-x {
@@ -102,11 +103,13 @@ ul a:hover {
 .open #ti-menu {
   display: none;
   margin: 10px 0;
+  transition: 0.3s ease-in-out;
 }
 
 .open #ti-x {
   display: block;
   margin: 10px 0;
+  transition: 0.3s ease-in-out;
 }
 
 .open .mobile-menu {
@@ -119,7 +122,7 @@ ul a:hover {
   background-color: #5a5bd3;
   color: #222328;
   border-radius: 5px;
-
+  transition: 0.3s ease-in-out;
 }
 
 .mobile-menu {
@@ -127,6 +130,7 @@ ul a:hover {
   position: sticky;
   background-color: #5a5bd3;
   /* height: calc(fit-content + 10px); */
+  transition: 0.3s ease-in-out;
 }
 
 
@@ -284,7 +288,7 @@ h5 span {
   width: 100%;
   cursor: grab;
   margin: 0;
-  background-color: #888a97;
+  background-color: #000000;
 }
 
 .itemPage .swiper-slide img {
