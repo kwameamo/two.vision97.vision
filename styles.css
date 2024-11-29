@@ -141,64 +141,78 @@ ul a:hover {
 
 
 .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  justify-content: center;
-  margin: 0 5%;
-  align-items: center;
-  text-align: left;
-  color: #888a97;  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .card {
-  height: fit-content;
-  border: solid 1px #5a5bd3;
-  border-radius: 5px;
-  text-align: center;
-  transition: 0.3s ease-in-out;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  border: solid 1px #888a97;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* SHOP *//* SHOP *//* SHOP *//* SHOP *//* SHOP */
 
 .shopItem {
-  cursor: pointer;
-  justify-content: center;
-  margin: 10px 0;
-
+    text-align: center;
+    padding: 20px;
 }
 
-.shopItem img {
-  width: 300px;
-  transition: 0.5s;
+.product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
 }
 
-.shopItem h5 a {
-  color: #888a97;
-  text-decoration: none; 
-  transition: 0.6s ease;
-  font-size: 15px;
+.card:hover .product-image {
+    transform: scale(1.05);
 }
 
-.shopItem h5 a:hover {
-  color: #888a97;
-  cursor: pointer;
-  color: #5a5bd3;
-  text-decoration: none;
+.product-info {
+    margin-top: 15px;
 }
 
-.shopItem h5:hover{
-  cursor: pointer;
-}   
+.product-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin: 5px 0;
+    text-transform: uppercase;
+    text-decoration: none;
+}
 
-h5 span {
-  color: #5a5bd3;
-  text-decoration: none; 
-  transition: 0.6s ease;
+.product-name a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.product-name a:hover {
+    color: #0073e6;
+}
+
+.product-price {
+    font-size: 16px;
+    font-weight: 400;
+    color: #777;
+}
+
+.product-price span {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0073e6;
 }
 /* SHOP *//* SHOP *//* SHOP *//* SHOP *//* SHOP */
 
